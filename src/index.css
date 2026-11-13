@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-ivory: #F3EBDD;
+    --bg-paper: #FFFFFF;
+    --bg-surface: #EAE2D4;
+    --text-charcoal: #292720;
+    --text-secondary: #756F63;
+    --text-muted: #9B9386;
+    --border-warm: #D8CDBB;
+    --divider-subtle: #E6DDCE;
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  .dark {
+    --bg-ivory: #191714;
+    --bg-paper: #23201B;
+    --bg-surface: #2B2822;
+    --text-charcoal: #F3EBDD;
+    --text-secondary: #B8B0A2;
+    --text-muted: #857D70;
+    --border-warm: #3B362E;
+    --divider-subtle: #2F2B24;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-ivory);
+    color: var(--text-charcoal);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom subtle scrollbars matching Warm Minimalism */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9BDAA;
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #443E35;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

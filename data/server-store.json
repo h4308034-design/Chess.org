@@ -1,0 +1,38 @@
+{
+  "leaderboard": [
+    {
+      "username": "Player",
+      "rating": 1200,
+      "wins": 0,
+      "games": 0,
+      "xp": 0,
+      "updatedAt": 1794557465007
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "tourn-ivory-rapid",
+      "name": "Chess.org Ivory Rapid Open",
+      "timeControl": "10+0",
+      "format": "Swiss · 5 Rounds",
+      "status": "open",
+      "participants": []
+    },
+    {
+      "id": "tourn-blitz-arena",
+      "name": "Evening Blitz Arena",
+      "timeControl": "3+2",
+      "format": "Arena · 45 min",
+      "status": "open",
+      "participants": []
+    },
+    {
+      "id": "tourn-classical-study",
+      "name": "Classical Founders Cup",
+      "timeControl": "30+0",
+      "format": "Round Robin",
+      "status": "open",
+      "participants": []
+    }
+  ]
+}

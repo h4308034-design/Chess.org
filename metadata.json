@@ -1,0 +1,6 @@
+{
+  "name": "Chess.org",
+  "description": "One Board. Infinite Possibilities. Traditional chess, variants, tactical training, AI personalities, analysis, and chess history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
